@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  background-color: ghostwhite;
+  font-family: Calibri, sans-serif;
+}
+
+.title-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: Calibri, Arial, sans-serif;
+  background-color: lightsteelblue;
+  color: steelblue;
+  padding: 20px 40px;
+  border-radius: 20px 40px;
+  display: inline-block;
+}
+
+.image-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.image-container img {
+  width: 300px;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: Calibri, sans-serif;
+  color: steelblue;
+  font-size: 48px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p.main-description {
+  font-family: Calibri, sans-serif;
+  color: steelblue;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.divider {
+  width: 200px;
+  height: 5px;
+  background-color: steelblue;
+  margin: 40px auto;
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 90%;
+  margin: 50px auto;
+  flex-wrap: wrap;
+}
+
+.slider-text {
+  max-width: 300px;
+  color: steelblue;
+}
+
+.slider-text h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.slider-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.slider-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.slider-container img {
+  width: 300px;
+  height: auto;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.rotated {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease;
+}
